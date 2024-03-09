@@ -47,7 +47,7 @@ salt = 'Tandon' # Remember it should be a byte-object
 salt = salt.encode('utf-8')
 password = 'ra4206@nyu.edu'
 input_string = 'AlwaysWatching'
-input_string = input_string.encode('utf-8')
+# input_string = input_string.encode('utf-8')
 encrypted_value = encrypt_with_aes(input_string, password, salt) # exfil function
 decrypted_value = decrypt_with_aes(encrypted_value, password, salt)  # exfil function
 
