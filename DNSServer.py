@@ -75,7 +75,7 @@ dns_records = {
             86400, #minimum
         ),    
     },
-    'safebank.com': {
+    'safebank.com.': {
         dns.rdatatype.A: '192.168.1.102',
     },
     'google.com': {
@@ -87,7 +87,7 @@ dns_records = {
     'yahoo.com': {
         dns.rdatatype.A: '192.168.1.105',
     },
-    'nyu.edu': {
+    'nyu.edu.': {
         dns.rdatatype.A: '192.168.1.106',
         dns.rdatatype.TXT: ('This is a TXT record',),
         dns.rdatatype.MX: [(10, 'mxa-00256a01.gslb.pphosted.com.')],  # List of (preference, mail server) tuples
